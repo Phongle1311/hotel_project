@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0dbb25d859.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="" class="nav__item gray-hover red white-text"
+        ><i class="fas fa-bed mr-16"></i>Logo</a
+      >
+      <a href="" class="nav__item gray-hover">Rooms</a>
+      <a href="" class="nav__item gray-hover">About</a>
+      <a href="" class="nav__item gray-hover">Contact</a>
+      <a href="" class="nav__item gray-hover gray">Book Now</a>
+      <div class="clear-fix"></div>
+    </nav>
+
+    <!--home section -->
+    <section class="home">
+      <div class="home__img">
+        <img src="./assets/img/home/hotel.jpg" alt="Hotel img" />
+      </div>
+      <div class="home__container">
+        <h1 class="container__title white-text red">
+          <i class="fas fa-bed mr-16"></i>Hotel Name
+        </h1>
+
+        <form class="home__form">
+          <div class="date">
+            <div class="input-block">
+              <label for="date-in" class="form-label">
+                <span class="mr-16 far fa-calendar"></span>
+                Check In
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="date-in"
+                required
+                placeholder="DD MM YYYY"
+              />
+            </div>
+            <div class="input-block">
+              <label for="date-out" class="form-label">
+                <span class="mr-16 far fa-calendar"></span>
+                Check Out
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="date-out"
+                required
+                placeholder="DD MM YYYY"
+              />
+            </div>
+          </div>
+
+          <div class="quantity">
+            <div class="input-block">
+              <label for="adults" class="form-label">
+                <span class="mr-16 fas fa-male"> </span>
+                Adults
+              </label>
+              <input
+                type="number"
+                class="form-control"
+                min="1"
+                id="adults"
+                value="1"
+              />
+            </div>
+            <div class="input-block">
+              <label for="kids" class="form-label">
+                <span class="mr-16 fas fa-child"></span>
+                Kids
+              </label>
+              <input
+                type="number"
+                class="form-control"
+                min="2"
+                id="kids"
+                value="0"
+              />
+            </div>
+          </div>
+          <button class="search-btn btn gray-hover">
+            <i class="fas fa-search mr-16"></i>
+            Search availibility
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!--room section -->
+    <section class="room">
+      <h3>Rooms</h3>
+      <p>
+        Make yourself at home is our slogan. We offer the best beds in the
+        industry. Sleep well and rest well.
+      </p>
+
+      <div class="room__form grid">
+        <div class="row s-gap">
+          <div class="col l-3 m-3 s-12">
+            <label for="date-in-2" class="form-label">
+              <span class="far fa-calendar"></span>
+              Check In
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="date-in-2"
+              required
+              placeholder="DD MM YYYY"
+            />
+          </div>
+          <div class="col l-3 m-3 s-12">
+            <label for="date-out-2" class="form-label">
+              <span class="far fa-calendar"></span>
+              Check Out
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="date-out-2"
+              required
+              placeholder="DD MM YYYY"
+            />
+          </div>
+
+          <div class="col l-2 m-2 s-12">
+            <label for="adults-2" class="form-label">
+              <span class="fas fa-male"> </span>
+              Adults
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              min="1"
+              id="adults-2"
+              value="1"
+            />
+          </div>
+
+          <div class="col l-2 m-2 s-12">
+            <label for="kids-2" class="form-label">
+              <span class="fas fa-child"></span>
+              Kids
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              min="2"
+              id="kids-2"
+              value="0"
+            />
+          </div>
+          <div class="col l-2 m-2 s-12">
+            <label for="room-btn" class="form-label">
+              <i class="fas fa-search"></i>
+              Search
+            </label>
+            <button class="form-control search-btn gray-hover" id="room-btn">
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div class="row s-gap room__list">
+          <div class="col l-4 m-4 s-12">
+            <div class="room__item">
+              <img
+                src="./assets/img/room/single_room.jpg"
+                alt="Single room picture"
+                class="room__img"
+              />
+              <div class="room__des">
+                <h3 class="room-type">Single Room</h3>
+                <h6 class="room__cost">From $99</h6>
+                <p>Single Bed</p>
+                <p>15m<sup>2</sup></p>
+                <div class="convenient">
+                  <i class="fas fa-bath"></i>
+                  <i class="fas fa-phone-alt"></i>
+                  <i class="fas fa-wifi"></i>
+                </div>
+                <button class="btn room-item-btn gray-hover">
+                  Choose Room
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l-4 m-4 s-12">
+            <div class="room__item">
+              <img
+                src="./assets/img/room/room_double.jpg"
+                alt="Double room picture"
+                class="room__img"
+              />
+              <div class="room__des">
+                <h3 class="room-type">Double Room</h3>
+                <h6 class="room__cost">From $149</h6>
+                <p>Queen-size Bed</p>
+                <p>25m<sup>2</sup></p>
+                <div class="convenient">
+                  <i class="fas fa-bath"></i>
+                  <i class="fas fa-phone-alt"></i>
+                  <i class="fas fa-wifi"></i>
+                  <i class="fas fa-tv"></i>
+                </div>
+                <button class="btn room-item-btn gray-hover">
+                  Choose Room
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l-4 m-4 s-12">
+            <div class="room__item">
+              <img
+                src="./assets/img/room/deluxe_room.jpg"
+                alt="Deluxe room picture"
+                class="room__img"
+              />
+              <div class="room__des">
+                <h3 class="room-type">Deluxe Room</h3>
+                <h6 class="room__cost">From $199</h6>
+                <p>King-size Bed</p>
+                <p>40m<sup>2</sup></p>
+                <div class="convenient">
+                  <i class="fas fa-bath"></i>
+                  <i class="fas fa-phone-alt"></i>
+                  <i class="fas fa-wifi"></i>
+                  <i class="fas fa-tv"></i>
+                  <i class="fas fa-glass-martini"></i>
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <button class="btn room-item-btn gray-hover">
+                  Choose Room
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--about section -->
+    <section class="about">
+      <div class="grid about__desc">
+        <div class="row s-gap">
+          <div class="col l-4 m-12 s-12">
+            <h3>About</h3>
+            <p>
+              Our hotel is one of a kind. It is truely amazing. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam.
+            </p>
+            <p>
+              We accept:
+              <i class="far fa-credit-card"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-cc-paypal"></i>
+            </p>
+          </div>
+          <div class="col l-8 m-12 s-12 s">
+            <img src="./assets/img/about/map.jpg" alt="Map" />
+          </div>
+        </div>
+
+        <div class="row s-gap about__contact">
+          <div class="col l-4 m-4 s-12">
+            <i class="red-text fas fa-map-marker-alt"></i>
+            423 Some adr, Chicago, US
+          </div>
+          <div class="col l-4 m-4 s-12">
+            <i class="red-text fas fa-phone-alt"></i>
+            Phone: +00 151515
+          </div>
+          <div class="col l-4 m-4 s-12">
+            <i class="red-text fas fa-envelope"></i>
+            Email: mail@mail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="about__notice red">
+        <p>
+          <i class="fas fa-info mr-16" id="notice"></i>
+          On demand, we can offer playstation, babycall, children care, dog
+          equipment, etc.
+        </p>
+      </div>
+
+      <div class="grid hotel-list">
+        <h3>Our hotels</h3>
+        <h6>You can find our hotels anywhere in the world:</h6>
+
+        <div class="row gallery s-gap">
+          <div class="col l-6 m-6 s-12">
+            <div class="gallery-item">
+              <img
+                src="./assets/img/about/cinqueterre.jpg"
+                alt="Cinque Terre"
+              />
+              <p class="hotel-name">Cinque Terre</p>
+            </div>
+          </div>
+          <div class="col l-6 m-6 s-12">
+            <div class="row s-gap">
+              <div class="col l-6 m-6 s-12">
+                <div class="gallery-item">
+                  <img src="./assets/img/about/newyork.jpg" alt="New York" />
+                  <p class="hotel-name">New York</p>
+                </div>
+              </div>
+              <div class="col l-6 m-6 s-12">
+                <div class="gallery-item">
+                  <img
+                    src="./assets/img/about/sanfran.jpg"
+                    alt="San Francisco"
+                  />
+                  <p class="hotel-name">San Francisco</p>
+                </div>
+              </div>
+              <div class="col l-6 m-6 s-12">
+                <div class="gallery-item">
+                  <img src="./assets/img/about/pisa.jpg" alt="Pisa" />
+                  <p class="hotel-name">Pisa</p>
+                </div>
+              </div>
+              <div class="col l-6 m-6 s-12">
+                <div class="gallery-item">
+                  <img src="./assets/img/about/paris.jpg" alt="Paris" />
+                  <p class="hotel-name">Paris</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__subscribe">
+        <h2>Get the best offers first!</h2>
+        <p>Join our newsletter.</p>
+        <form>
+          <label for="mail3">E-mail</label>
+          <input
+            type="email"
+            name="mail"
+            id="mail3"
+            class="form-control"
+            placeholder="Your Email address"
+            required
+          />
+          <button type="submit" class="btn red gray-hover">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!--contact section -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>If you have any questions, do not hesitate to ask them.</p>
+
+      <div class="contact-com">
+        <i class="mr-16 red-text fas fa-map-marker-alt"></i>
+        <span>423 Some adr, Chicago, US</span>
+      </div>
+      <div class="contact-com">
+        <i class="mr-16 red-text fas fa-phone-alt"></i>
+        <span>Phone: +00 151515</span>
+      </div>
+      <div class="contact-com">
+        <i class="mr-16 red-text fas fa-envelope"></i>
+        <span>Email: mail@mail.com</span>
+      </div>
+
+      <form class="contact__form">
+        <input
+          type="text"
+          required
+          class="form-control"
+          placeholder="Name"
+          name="Name"
+        />
+        <input
+          type="email"
+          required
+          class="form-control"
+          placeholder="Email"
+          name="Mail"
+        />
+        <input
+          type="text"
+          required
+          class="form-control"
+          placeholder="Message"
+          name="Message"
+        />
+        <button class="btn gray-hover" type="submit" name="Submit">
+          SEND MESSAGE
+        </button>
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <h5>Find Us On</h5>
+      <div class="footer__icon">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
